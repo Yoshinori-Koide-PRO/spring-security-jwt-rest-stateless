@@ -28,12 +28,12 @@ public class DatabaseConfig {
     @Bean
     public HikariDataSource getDataSource(){
         HikariDataSource dataSource = new HikariDataSource();
-        dataSource.setDataSourceClassName("com.mysql.jdbc.jdbc2.optional.MysqlDataSource");
+        dataSource.setDataSourceClassName("org.postgresql.jdbc3.Jdbc3SimpleDataSource");
         dataSource.addDataSourceProperty("databaseName", "demorest");
-        dataSource.addDataSourceProperty("portNumber", "3306");
-        dataSource.addDataSourceProperty("serverName", "127.0.0.1");
-        dataSource.addDataSourceProperty("user", "root");
-        dataSource.addDataSourceProperty("password", "");
+        dataSource.addDataSourceProperty("portNumber", "5432");
+        dataSource.addDataSourceProperty("serverName", "psql");
+        dataSource.addDataSourceProperty("user", "postgres");
+        dataSource.addDataSourceProperty("password", "postgres");
         return dataSource;
     }
 

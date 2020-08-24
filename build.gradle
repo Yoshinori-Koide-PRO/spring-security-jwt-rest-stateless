@@ -25,7 +25,7 @@ dependencies {
             'org.hibernate:hibernate-entitymanager:5.1.0.Final',
             'org.hibernate:hibernate-validator:5.2.4.Final',
             'com.zaxxer:HikariCP:2.4.5',
-            'mysql:mysql-connector-java:5.1.38'
+            'org.postgresql:postgresql:42.2.16'
 
     )
     compile(
